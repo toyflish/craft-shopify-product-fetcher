@@ -15,7 +15,13 @@ class ShopifyVariables
 		return \shopify\Shopify::getInstance()->service->getProductById($options);
 	}
 
-	public function getSettings() {
+	public function getCustomerCart() 
+	{
+		return \shopify\Shopify::getInstance()->service->getCustomerCart();
+	}
+
+	public function getSettings() 
+	{
         return \shopify\Shopify::getInstance()->getSettings();
-    }
+	}
 }

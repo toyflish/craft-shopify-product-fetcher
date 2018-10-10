@@ -76,6 +76,12 @@ class ShopifyService extends Component
     }
 
 
+    public function getCustomerCart()
+    {
+        //TODO HTTP call to: //craftintegration.myshopify.com/cart.json and return items
+    }
+
+
     /**
      * @param $endpoint
      * @param \shopify\models\settings $settings

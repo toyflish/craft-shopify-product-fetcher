@@ -5,7 +5,7 @@
 	<select name="{{ name }}[]" multiple>
 		<option value="">{{ "None"|t }}</option>
 		{% for option in products %}
-			<option value="{{ option.productId }}"{% if option.productId in value %} selected{% endif %}>{{ option.label }}</option>
+			<option value="{{ option.productId }}"{% if option.productId in value %} selected{% endif %}>{{ option.label|slice(0, 70)}}</option>
 		{% endfor %}
 	</select>
 </div>
